@@ -37,3 +37,23 @@ Sensing: The MLX90614 takes a temperature reading simultaneously.
 Processing: The ESP32 sends the voice data and temperature to the FastAPI Server.
 AI Reasoning: The server queries Gemini Pro, asking it to analyze the symptoms + temperature.
 Output: The AI response is sent back; the ESP32 displays the text on the 3.2" Screen and plays the audio via the MAX98357A.
+🏗️ Setup & Installation
+1. Server Setup
+code
+Bash
+cd server
+python -m venv venv
+source venv/bin/activate
+pip install fastapi uvicorn google-generativeai
+python -m uvicorn server:app --host 0.0.0.0 --port 8080
+2. ESP32 Firmware
+Open AayuGuide.ino in Arduino IDE.
+Update WIFI_SSID, WIFI_PASSWORD, and SERVER_URL.
+Select board "ESP32 Dev Module".
+Upload and monitor via Serial.
+📸 Design Assets
+PCB: Designed in KiCad (Dual layer).
+Enclosure: Designed in Onshape (150mm x 80mm x 22mm).
+⚖️ Disclaimer
+AayuGuide is an AI-powered educational tool. It is not a certified medical device. Always consult a professional doctor for medical emergencies.
+Created with ❤️ by [Your Name/Team Name]
