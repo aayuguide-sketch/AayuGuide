@@ -56,4 +56,4 @@ PCB: Designed in KiCad (Dual layer).
 Enclosure: Designed in Onshape (150mm x 80mm x 22mm).
 ⚖️ Disclaimer
 AayuGuide is an AI-powered educational tool. It is not a certified medical device. Always consult a professional doctor for medical emergencies.
-Created with ❤️ by [Your Name/Team Name]
+Created with ❤️ by [Aayu.Guide]
